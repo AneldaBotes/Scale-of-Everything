@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scale of Everything</title>
+<meta name="description" content="An endless dive through every scale of reality, from the multiverse to the smallest ideas in physics and back.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="zoom" aria-label="Scale of Everything: a zoom from the multiverse down to the smallest scales and back"></canvas>
+
+<nav class="strip" id="strip" aria-label="Jump to a level"></nav>
+
+<div class="here">
+  <h1 id="name" aria-live="polite">Planet</h1>
+  <div class="size"><span id="scale">?</span><span id="friendly"></span></div>
+  <p id="cap"></p>
+  <div id="info" hidden><p id="infoText"></p><p id="credit"></p></div>
+  <div class="btns">
+    <button id="outBtn" class="step" type="button" aria-label="Zoom out one level">−</button>
+    <button id="inBtn" class="step" type="button" aria-label="Zoom in one level">+</button>
+    <button id="auto" type="button" aria-pressed="false">auto dive</button>
+    <button id="about" type="button" aria-pressed="false">about</button>
+    <button id="sound" type="button" aria-pressed="false">sound</button>
+    <button id="full" type="button">fullscreen</button>
+  </div>
+</div>
+<nav class="ladder" id="ladder" aria-label="Jump to a level"></nav>
+
+<script src="zoom.js"></script>
+</body>
+</html>
